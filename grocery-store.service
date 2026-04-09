@@ -1,0 +1,16 @@
+[Unit]
+Description=Grocery E-Store Application
+After=network.target
+
+[Service]
+Type=simple
+User=jm
+WorkingDirectory=/home/jm/sari2system
+ExecStart=/home/jm/sari2system/start.sh
+Restart=on-failure
+RestartSec=10
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
