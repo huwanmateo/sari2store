@@ -1,0 +1,188 @@
+.inventory-page {
+  animation: fadeIn 0.3s;
+}
+
+.alert-badge {
+  background: #fff3cd;
+  color: #856404;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 1px solid #ffeeba;
+  font-weight: 600;
+}
+
+.inventory-table-container {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.inventory-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.inventory-table thead {
+  background: #f8f9fa;
+}
+
+.inventory-table th {
+  padding: 15px;
+  text-align: left;
+  font-weight: 600;
+  color: #555;
+  border-bottom: 2px solid #dee2e6;
+}
+
+.inventory-table td {
+  padding: 15px;
+  border-bottom: 1px solid #e9ecef;
+  color: #333;
+}
+
+.inventory-table tbody tr {
+  transition: background 0.2s;
+}
+
+.inventory-table tbody tr:hover {
+  background: #f8f9fa;
+}
+
+.low-stock-row {
+  background: #fff3cd !important;
+}
+
+.low-stock-row:hover {
+  background: #ffe8a1 !important;
+}
+
+.product-name {
+  font-weight: 500;
+}
+
+.category-cell {
+  text-transform: capitalize;
+}
+
+.category-badge {
+  background: #e9ecef;
+  padding: 4px 10px;
+  border-radius: 15px;
+  font-size: 12px;
+  color: #666;
+}
+
+.price-cell {
+  font-weight: 500;
+  color: #667eea;
+}
+
+.stock-cell {
+  font-size: 16px;
+}
+
+.stock-input {
+  width: 80px;
+  padding: 5px 10px;
+  border: 2px solid #667eea;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.stock-input:focus {
+  outline: none;
+  border-color: #5568d3;
+}
+
+.status-cell {
+  text-align: center;
+}
+
+.status-badge {
+  padding: 5px 12px;
+  border-radius: 15px;
+  font-size: 12px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.status-badge.good {
+  background: #d4edda;
+  color: #155724;
+}
+
+.status-badge.low {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+.actions-cell {
+  text-align: center;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+}
+
+.btn-update, .btn-save, .btn-cancel {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.btn-update {
+  background: #667eea;
+  color: white;
+}
+
+.btn-update:hover {
+  background: #5568d3;
+}
+
+.btn-save {
+  background: #28a745;
+  color: white;
+}
+
+.btn-save:hover {
+  background: #218838;
+}
+
+.btn-cancel {
+  background: #6c757d;
+  color: white;
+}
+
+.btn-cancel:hover {
+  background: #5a6268;
+}
+
+.no-data {
+  text-align: center !important;
+  color: #999;
+  padding: 40px !important;
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .inventory-table-container {
+    overflow-x: auto;
+  }
+  
+  .inventory-table {
+    min-width: 700px;
+  }
+  
+  .page-header {
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+  }
+}
