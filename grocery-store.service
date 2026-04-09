@@ -4,9 +4,9 @@ After=network.target
 
 [Service]
 Type=simple
-User=jm
-WorkingDirectory=/home/jm/sari2system
-ExecStart=/home/jm/sari2system/start.sh
+User=administrator
+WorkingDirectory=/home/administrator/sari2store
+ExecStart=/home/administrator/sari2store/start.sh
 Restart=on-failure
 RestartSec=10
 StandardOutput=journal
