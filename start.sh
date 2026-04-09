@@ -34,7 +34,7 @@ cd server && node server.js &
 BACKEND_PID=$!
 
 echo "✅ Starting Frontend Server (Port 5173)..."
-cd ../client && npm run dev --host&
+cd client && npm run dev --host &
 FRONTEND_PID=$!
 
 echo ""
