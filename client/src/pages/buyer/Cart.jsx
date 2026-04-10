@@ -90,11 +90,11 @@ const Cart = () => {
             <div className="summary-details">
               <div className="summary-row">
                 <span>Items ({cartItems.length})</span>
-                <span>${getCartTotal().toFixed(2)}</span>
+                <span>₱{getCartTotal().toFixed(2)}</span>
               </div>
               <div className="summary-row total">
                 <span>Total</span>
-                <span>${getCartTotal().toFixed(2)}</span>
+                <span>₱{getCartTotal().toFixed(2)}</span>
               </div>
             </div>
             <button onClick={handleCheckout} className="btn-checkout">
